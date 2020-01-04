@@ -1,7 +1,9 @@
 import React from 'react';
 import Header from './elements/Header';
 
-const App = () => <div><Header/></div>;
+import Home from './Home'
+
+const App = () => (<div><Header/><Home/></div>);
 
 export default App;
 
