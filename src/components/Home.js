@@ -11,11 +11,12 @@ import MovieThumb from './elements/MovieThumb';
 import Spinner from './elements/Spinner';
 
 //Custom hook
-import { useHomeFetch } from './hooks/useHomeFetch';
+import { useHomeFetch } from './Hooks/useHomeFetch';
 
 const Home = () => {
 
-
+    const [{ state, loading, error }, fetchMovies] = useHomeFetch();
+    console.log(state);
     return (
         <div>
             <HeroImage/>
