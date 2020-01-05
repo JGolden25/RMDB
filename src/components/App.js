@@ -6,7 +6,14 @@ import Home from './Home'
 
 import { GlobalStyle } from './styles/GlobalStyle';
 
-const App = () => (<div><Header/><Home/><GlobalStyle /></div>);
+const App = () => (<div><Header/>
+<Router>
+    <Home path="/"/>
+    <Movie path="/:movieId"/>
+    <NotFound default />
+</Router>
+
+<GlobalStyle /></div>);
 
 export default App;
 
