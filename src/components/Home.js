@@ -61,7 +61,9 @@ const Home = () => {
               </Grid>
             
             {loading && <Spinner/>}
+            {currentPage < totalPage && !loading && (
             <LoadMoreBtn text="Load More" callback={loadMoreMovies}/>
+            )}
         </div>
     );
 };
