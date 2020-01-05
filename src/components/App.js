@@ -1,9 +1,12 @@
 import React from 'react';
+import { Router } from '@reach/router';
 import Header from './elements/Header';
 
 import Home from './Home'
 
-const App = () => (<div><Header/><Home/></div>);
+import { GlobalStyle } from './styles/GlobalStyle';
+
+const App = () => (<div><Header/><Home/><GlobalStyle /></div>);
 
 export default App;
 
