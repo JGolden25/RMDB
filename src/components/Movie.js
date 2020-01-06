@@ -10,7 +10,7 @@ import Actor from './elements/Actor';
 import Grid from './elements/Grid';
 import Spinner from './elements/Spinner';
 
-import { useMovieFetch } from './hooks/useMovieFetch';
+import { useMovieFetch } from './Hooks/useMovieFetch';
 
 const Movie = ({ movieId }) => {
     const [movie, loading, error] = useMovieFetch(movieId);
